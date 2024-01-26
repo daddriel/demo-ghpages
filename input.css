@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  @apply h-screen flex flex-col justify-center items-center;
+}
+h2{
+  @apply text-2xl font-thin text-center text-cyan-600;
+}
+
+.container {
+  @apply mx-auto py-6;
+
+
+}
+p {
+  @apply text-center text-gray-500 pt-8;
+}
+
+.title {
+  @apply text-4xl font-bold text-emerald-600 text-center;
+}
+
+.fruits {
+  @apply text-2xl;
+}
+
+.levels {
+ @apply pt-10;
+
+
+}
+.levels__options {
+  @apply pt-5 flex justify-center gap-2;
+}
+
+#emoji{
+  @apply text-2xl w-80 text-center mx-auto;
+
+}
+.form-word{
+  @apply pt-10 flex flex-col w-80 text-center mx-auto;
+
+  .input {
+    @apply border border-cyan-600 rounded-md 
+    mb-6 p-2
+    focus-visible:outline-cyan-700;
+
+  }
+  .focus-error {
+    @apply focus-visible:outline-red-600
+    placeholder:text-red-600
+  }
+}
+
+.tips{
+  @apply text-center pt-10;
+  h2{
+    @apply mb-3;
+  }
+  .tips_list {
+    @apply flex justify-center gap-2;
+ 
+    li {
+      @apply text-cyan-600 border border-cyan-600 px-3 py-1 rounded-full;
+    }
+  
+  }
+}
+
+.attempts{
+  @apply py-3 font-normal;
+  span{
+    @apply font-black text-lg;
+  }
+}
+
+.success{
+  @apply text-cyan-700 text-2xl font-bold text-center;
+}
+
+.fail{
+  @apply text-red-800 text-2xl font-bold text-center;
+}
+
+/* buttons */
+
+.btn {
+  @apply py-1 pl-6 pr-6 
+  rounded-md border border-cyan-600 
+  font-normal text-cyan-600 text-base 
+  bg-transparent  
+  
+  hover:shadow-lg
+  hover:bg-cyan-600
+  hover:text-white
+}
+
+.active{
+  @apply bg-cyan-600 text-white;
+}
+
+.refresh{
+  @apply bg-cyan-600 
+  p-2
+  md:p-4
+  rounded-full 
+  text-white 
+  cursor-pointer 
+  
+  absolute
+  top-4
+  right-4
+
+  hover:shadow-md;
+
+  img {
+    @apply w-6 h-6
+    md:w-10
+    md:h-10;
+  }
+
+}
+.level5{
+  @apply text-red-600;
+}
+.level4{
+  @apply text-yellow-600;
+}
+.level3{
+  @apply text-green-600;
+}
+.level2{
+  @apply text-blue-600;
+}
+.level1{
+  @apply text-indigo-600;
+}
